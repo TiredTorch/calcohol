@@ -3,17 +3,25 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
+    "start:calcohol-user": "nx serve calcohol-user --port=4201",
+    "build:calcohol-user": "nx build calcohol-user --skip-nx-cache --prod",
+    "lint": "nx run-many --target=lint --all --maxWarnings=-1 --skip-nx-cache",
     "test": "nx test"
   },
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.1",
     "@nrwl/next": "14.5.8",
+    "@reduxjs/toolkit": "^1.8.5",
     "core-js": "^3.6.5",
+    "firebase": "^9.9.3",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intl": "^6.0.8",
+    "react-redux": "^8.0.2",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.3.0"
   },

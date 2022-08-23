@@ -1,18 +1,34 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import './styles.css';
+import { AppProps } from "next/app";
+import Head from "next/head";
+import { Provider } from "react-redux";
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { AppIntlProvider, PageLayout, store } from "@calcohol/calcoholuserapp";
+import { theme } from "@calcohol/shared";
 
-function CustomApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <title>Welcome to calcohol-user!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
-    </>
-  );
-}
+export const CustomApp = ({ Component, pageProps }: AppProps) => {
+	return (
+		<>
+			<Head>
+				<link
+					rel="shortcut icon"
+					href="/favicon.ico"
+				/>
+				<title>Calcohol</title>
+			</Head>
+			<Provider store={store}>
+				<AppIntlProvider>
+					<ThemeProvider theme={theme}>
+						<CssBaseline>
+							<PageLayout>
+								<Component {...pageProps} />
+							</PageLayout>
+						</CssBaseline>
+					</ThemeProvider>
+				</AppIntlProvider>
+			</Provider>
+		</>
+	);
+};
 
 export default CustomApp;
