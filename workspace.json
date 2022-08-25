@@ -2,9 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "calcohol-user": "apps/calcohol-user",
-    "calcohol-user-e2e": "apps/calcohol-user-e2e",
-    "calcoholuserapp": "libs/calcoholuserapp",
+    "calcohol": "apps/calcohol",
+    "calcohol-e2e": "apps/calcohol-e2e",
+    "calcoholapp": "libs/calcoholapp",
     "redux": "libs/redux",
     "shared": "libs/shared"
   }

@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:calcohol-user": "nx serve calcohol-user --port=4201",
-    "build:calcohol-user": "nx build calcohol-user --skip-nx-cache --prod",
+    "start:calcohol": "nx serve calcohol --port=4201",
+    "build:calcohol": "nx build calcohol --skip-nx-cache --prod",
     "lint": "nx run-many --target=lint --all --maxWarnings=-1 --skip-nx-cache",
     "test": "nx test"
   },
@@ -19,11 +19,14 @@
     "firebase": "^9.9.3",
     "next": "12.2.3",
     "react": "18.2.0",
+    "react-click-away-listener": "^2.2.1",
     "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.0.3",
     "react-intl": "^6.0.8",
     "react-redux": "^8.0.2",
     "regenerator-runtime": "0.13.7",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "use-debounce": "^8.0.3"
   },
   "devDependencies": {
     "@nrwl/cli": "14.5.8",

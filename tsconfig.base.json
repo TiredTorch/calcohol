@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@calcohol/calcoholuserapp": ["libs/calcoholuserapp/src/index.ts"],
+      "@calcohol/calcoholapp": ["libs/calcoholapp/src/index.ts"],
       "@calcohol/redux": ["libs/redux/src/index.ts"],
       "@calcohol/shared": ["libs/shared/src/index.ts"]
     }
