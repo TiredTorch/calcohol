@@ -4,7 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { MobileWrapperLayout, theme } from "@calcohol/shared";
 import { routes } from "../routes";
 
-function CustomApp({ Component, pageProps }: AppProps) {
+const CustomApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -19,6 +19,6 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </ThemeProvider>
     </>
   );
-}
+};
 
 export default CustomApp;

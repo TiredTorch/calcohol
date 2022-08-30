@@ -1,7 +1,8 @@
+import { CalculatorPageContainer } from "@calcohol/calcoholapp";
 
 export const CalculatorPage = () => {
     return (
-        <div>CalculatorPage</div>
+        <CalculatorPageContainer />
     );
 };
 

@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^1.8.5",
     "core-js": "^3.6.5",
     "firebase": "^9.9.3",
+    "formik": "^2.2.9",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-click-away-listener": "^2.2.1",
@@ -26,7 +27,8 @@
     "react-redux": "^8.0.2",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.3.0",
-    "use-debounce": "^8.0.3"
+    "use-debounce": "^8.0.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@nrwl/cli": "14.5.8",

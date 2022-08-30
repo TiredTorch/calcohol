@@ -3,4 +3,5 @@ export type Drink = {
 	description: string;
 	vol: number;
 	image: string;
+	uid: string;
 };

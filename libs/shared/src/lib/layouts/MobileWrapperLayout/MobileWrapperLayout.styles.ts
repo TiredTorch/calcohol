@@ -9,10 +9,13 @@ export const mobileWrapperLayoutStyles = {
 		left: 0,
 		width: "100vw",
 		height: "100vh",
+		maxWidth: "100vw",
+		maxHeight: "100vh",
 		background: `url("${getImageSrc(bg)}")`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
-		backgroundRepeat: "no-repeat"
+		backgroundRepeat: "no-repeat",
+		overflow: "hidden"
 	},
 	mobileWrapper: {
 		width: "100%",

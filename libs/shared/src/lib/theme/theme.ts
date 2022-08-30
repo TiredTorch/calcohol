@@ -43,10 +43,18 @@ theme.components = {
 			}
 		}
 	},
+	MuiFormHelperText: {
+		styleOverrides: {
+			root: {
+				textTransform: "capitalize",
+				marginTop: "0",
+				fontSize: "calc(.5vmin + 10px)"
+			}
+		}
+	},
 	MuiInput: {
 		styleOverrides: {
 			root: {
-				margin: "15px 0",
 				boxSizing: "border-box",
 				background: "rgba(132, 73, 208, 0.11)",
 				border: "3px solid rgba(54, 123, 203, 0.28)",
@@ -78,12 +86,65 @@ theme.components = {
 
 				"&.Mui-focused": {
 					top: "-10px",
-					left: "10px",	
+					left: "10px",
 				},
 				"&.MuiFormLabel-filled": {
 					top: "-10px",
 					left: "10px",
 				}
+			}
+		}
+	},
+	MuiButton: {
+		styleOverrides: {
+			root: {
+				background: "rgba(132, 73, 208, 0.1)",
+				border: "2px solid rgba(145, 54, 54, 0.15)",
+				boxShadow: "3px 7px 4px rgba(0, 0, 0, 0.25)",
+				borderRadius: "10px",
+				width: "273px",
+				height: "79px",
+				color: theme.palette.common.black,
+				fontSize: "20px"
+			}
+		}
+	},
+	MuiSwitch: {
+		styleOverrides: {
+			root: {
+				transform: "scale(1.2)",
+				"& .MuiSwitch-track": {
+					background: "yellow",
+				}
+			},
+			track: {
+				background: "yellow",
+				border: "none",
+				".Mui-checked.Mui-checked + &": {
+					// opacity: 0.7,
+					backgroundColor: "#fff"
+				}
+			},
+			thumb: {
+				background: "maroon"
+			},
+		}
+	},
+	MuiSlider: {
+		styleOverrides: {
+			rail: {
+				background: "yellow",
+				opacity: "1"
+			},
+			track: {
+				background: "yellow",
+				border: "none"
+			},
+			mark: {
+				background: "none"
+			},
+			thumb: {
+				background: "maroon"
 			}
 		}
 	}
