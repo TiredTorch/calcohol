@@ -12,6 +12,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  images: {
+    domains: ["firebasestorage.googleapis.com"]
+  }
 };
 
 module.exports = withNx(nextConfig);

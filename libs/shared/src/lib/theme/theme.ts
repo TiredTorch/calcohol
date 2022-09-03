@@ -121,7 +121,6 @@ theme.components = {
 				background: "yellow",
 				border: "none",
 				".Mui-checked.Mui-checked + &": {
-					// opacity: 0.7,
 					backgroundColor: "#fff"
 				}
 			},

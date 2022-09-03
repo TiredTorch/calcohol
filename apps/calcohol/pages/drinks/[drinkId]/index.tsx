@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { useDocument } from "react-firebase-hooks/firestore";
-import { firestoreApp } from "@calcohol/shared";
-import { doc } from "firebase/firestore";
+import { doc, DocumentReference } from "firebase/firestore";
+import { useDocumentData } from "react-firebase-hooks/firestore";
+import { DrinkPageContainer } from "@calcohol/calcoholapp";
+import { Drink, firestoreApp } from "@calcohol/shared";
 
 export const DrinkPage = () => {
     const router = useRouter();
@@ -11,15 +12,16 @@ export const DrinkPage = () => {
     useEffect(() => {
         if (!router.query.drinkId || Array.isArray(router.query.drinkId)) return;
         setDrinkUId(router.query.drinkId);
+        console.log(router.query.drinkId);
     }, [router]);
 
-    const [snapshot, loading, error] = useDocument(
-        doc(firestoreApp, `drinks`, drinkUId), {}
+    const [data, loading, error] = useDocumentData(
+        (doc(firestoreApp, `drinks`, drinkUId) as DocumentReference<Drink>), {}
     );
     return (
         <>
-            {!loading && !error && snapshot && (
-                <div>{snapshot.data()?.name}</div>
+            {!loading && !error && data && (
+                <DrinkPageContainer data={data} />
             )}
         </>
     );
