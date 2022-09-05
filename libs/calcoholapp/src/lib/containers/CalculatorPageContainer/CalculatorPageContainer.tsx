@@ -5,18 +5,30 @@ import ResultsCalculatorSection from "./ResultsCalculatorSection/ResultsCalculat
 import { getRequiredEtanol } from "../../helpers";
 
 export const CalculatorPageContainer = () => {
+	const [etanolMass, setEtanolMass] = useState({
+		softDrinksEtanolPart: 0,
+		hardDrinksEtanolPart: 0
+	});
 	const [isFinishedInput, setIsFinishedInput] = useState(false);
 
 	const handleSubmitForm = (values: UserPhysProps) => {
-		console.log(getRequiredEtanol(values));
+		const etanolData = getRequiredEtanol(values);
+		setEtanolMass({
+			softDrinksEtanolPart: etanolData.softDrinksEtanolPart,
+			hardDrinksEtanolPart: etanolData.hardDrinksEtanolPart
+		});
 		setIsFinishedInput((prev) => !prev);
 	};
 
 	return (
 		<>
-			{isFinishedInput ? (
-				<ResultsCalculatorSection />
-			) : (
+			{isFinishedInput && (
+				<ResultsCalculatorSection
+					softDrinksEtanolPart={etanolMass.softDrinksEtanolPart}
+					hardDrinksEtanolPart={etanolMass.hardDrinksEtanolPart}
+				/>
+			)}
+			{!isFinishedInput && (
 				<SearchDrinkCombinationForm
 					handleSubmitForm={handleSubmitForm}
 				/>

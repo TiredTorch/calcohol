@@ -12,7 +12,6 @@ export const DrinkPage = () => {
     useEffect(() => {
         if (!router.query.drinkId || Array.isArray(router.query.drinkId)) return;
         setDrinkUId(router.query.drinkId);
-        console.log(router.query.drinkId);
     }, [router]);
 
     const [data, loading, error] = useDocumentData(

@@ -1,38 +1,31 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import Image from "next/image";
-import { Box, CircularProgress, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { DrinkPageContainerProps } from "./DrinkPageContainer.types";
 import { drinkPageContainerStyles } from "./DrinkPageContainer.styles";
 
 export const DrinkPageContainer: FC<DrinkPageContainerProps> = ({
 	data
 }) => {
-	const [isImageLoading, setIsImageLoading] = useState(true);
-
 	return (
 		<Box
 			component="div"
 			sx={drinkPageContainerStyles.root}
 		>
-			<Typography>{data.name}</Typography>
-			<Typography>{`${data.vol} vol.`}</Typography>
-			<Typography>{data.description}</Typography>
+			<Typography variant="h3">{`Name: ${data.name}`}</Typography>
+			<Typography variant="h2">{`Vol: ${data.vol} `}</Typography>
+			<Typography variant="h4">{`About: ${data.description}`}</Typography>
 			<Box
 				component="div"
 				sx={drinkPageContainerStyles.imageWrapper}
 			>
-				{isImageLoading ? (
-					<CircularProgress />
-				) : (
-					<Image
-						src={data.image}
-						layout="fill"
-						objectFit="cover"
-						objectPosition="100% 50%"
-						onLoad={() => setIsImageLoading(false)}
-						placeholder="empty"
-					/>
-				)}
+				<Image
+					src={data.image}
+					layout="fill"
+					objectFit="cover"
+					objectPosition="100% 50%"
+					placeholder="empty"
+				/>
 			</Box>
 
 		</Box>

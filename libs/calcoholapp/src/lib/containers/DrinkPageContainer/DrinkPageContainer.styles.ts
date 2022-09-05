@@ -11,6 +11,7 @@ export const drinkPageContainerStyles = {
 	imageWrapper: {
 		position: "relative",
 		width: "100%",
-		height: "50%"
+		height: "50%",
+		borderTop: "3px solid white"
 	}
 };

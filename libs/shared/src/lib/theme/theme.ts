@@ -20,9 +20,17 @@ export const theme = createTheme({
 			fontWeight: "400",
 			lineHeight: "39px",
 			letterSpacing: "0em",
-			textAlign: "center"
+			textAlign: "center",
+			textTransform: "capitalize"
 		},
 		h4: {
+			fontSize: "20px",
+			fontWeight: "400",
+			lineHeight: "24.2px",
+			letterSpacing: "0em",
+			textAlign: "center"
+		},
+		h5: {
 			fontSize: "20px",
 			fontWeight: "400",
 			lineHeight: "24.2px",
@@ -114,36 +122,36 @@ theme.components = {
 			root: {
 				transform: "scale(1.2)",
 				"& .MuiSwitch-track": {
-					background: "yellow",
+					background: "blue",
+					opacity: .3
 				}
 			},
 			track: {
-				background: "yellow",
-				border: "none",
 				".Mui-checked.Mui-checked + &": {
-					backgroundColor: "#fff"
+					backgroundColor: "blue",
+					opacity: .3
 				}
 			},
 			thumb: {
-				background: "maroon"
+				background: "#8449D0"
 			},
 		}
 	},
 	MuiSlider: {
 		styleOverrides: {
 			rail: {
-				background: "yellow",
-				opacity: "1"
+				background: "blue",
 			},
 			track: {
-				background: "yellow",
-				border: "none"
+				background: "blue",
+				border: "none",
+				opacity: .1
 			},
 			mark: {
 				background: "none"
 			},
 			thumb: {
-				background: "maroon"
+				background: "#8449D0"
 			}
 		}
 	}

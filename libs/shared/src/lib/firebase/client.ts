@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const clientCredentials = {
-	apiKey: `AIzaSyBEikBkcAZH5gtYIzAY4VL3Xp0s0KOhyec`,
-	authDomain: `calcohol-3d5ef.firebaseapp.com`,
-	projectId: `calcohol-3d5ef`,
-	storageBucket: `calcohol-3d5ef.appspot.com`,
-	messagingSenderId: `289727078536`,
-	appId: `:289727078536:web:bad345589c72ed89a23f3d`,
-	measurementId: `G-Z5QJQNPPGX`
+	apiKey: process.env["NX_API_KEY"],
+	authDomain: process.env["NX_AUTH_DOMAIN"],
+	projectId: process.env["NX_PROJECT_ID"],
+	storageBucket: process.env["NX_STORAGE_BUCKET"],
+	messagingSenderId: process.env["NX_MESSAGING_SENDER_ID"],
+	appId: process.env["NX_APP_ID"],
+	measurementId: process.env["NX_MEASUREMENT_ID"]
 };
 
 export const firebaseApp = initializeApp(clientCredentials);
