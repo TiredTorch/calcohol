@@ -41,7 +41,7 @@ export const MobileWrapperLayout: FC<PropsWithChildren<MobileWrapperLayoutProps>
 							component="span"
 							sx={mobileWrapperLayoutStyles.text}
 						>
-							Title
+							Calcohol
 						</Typography>
 						<Logo />
 					</Box>

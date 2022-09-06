@@ -5,7 +5,6 @@ export const drinkPageContainerStyles = {
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "space-between",
-		paddingTop: "10px",
 		alignItems: "center"
 	},
 	imageWrapper: {
@@ -13,5 +12,15 @@ export const drinkPageContainerStyles = {
 		width: "100%",
 		height: "50%",
 		borderTop: "3px solid white"
+	},
+	textWrapper: {
+		paddingTop: "20px",
+		display: "flex",
+		flexDirection: "column",
+		alignItems: "center",
+		width: "60%",
+		height: "50%",
+		borderLeft: "5px solid white",
+		borderRight: "5px solid white"
 	}
 };

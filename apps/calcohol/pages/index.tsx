@@ -1,9 +1,8 @@
+import { HomePageContainer } from "@calcohol/calcoholapp";
 
 export const HomePage = () => {
   return (
-    <>
-      fff
-    </>
+    <HomePageContainer/>
   );
 };
 

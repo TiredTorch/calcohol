@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import { doc, DocumentReference } from "firebase/firestore";
 import { useDocumentData } from "react-firebase-hooks/firestore";
-import { DrinkPageContainer } from "@calcohol/calcoholapp";
 import { Drink, firestoreApp } from "@calcohol/shared";
+
+const DrinkPageContainer = dynamic(() =>
+    import("@calcohol/calcoholapp").then((module) => module.DrinkPageContainer));
 
 export const DrinkPage = () => {
     const router = useRouter();
@@ -17,6 +20,11 @@ export const DrinkPage = () => {
     const [data, loading, error] = useDocumentData(
         (doc(firestoreApp, `drinks`, drinkUId) as DocumentReference<Drink>), {}
     );
+
+    if (loading) {
+        return <>Loading</>;
+    }
+
     return (
         <>
             {!loading && !error && data && (

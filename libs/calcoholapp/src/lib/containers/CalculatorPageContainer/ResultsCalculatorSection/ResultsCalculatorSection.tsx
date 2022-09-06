@@ -32,16 +32,20 @@ export const ResultsCalculatorSection: FC<ResultsCalculatorSectionProps> = ({
 				component="div"
 				sx={resultsCalculatorSectionStyles.drinksWrapper}
 			>
-				<ResultsCalculatorSectionItem
-					name={"Beer"}
-					mass={requiredLiters.softDrink}
-					image={"https://firebasestorage.googleapis.com/v0/b/calcohol-3d5ef.appspot.com/o/beer.jpg?alt=media&token=0e0190cf-8776-47f0-be76-ac9a32566cb1"}
-				/>
-				<ResultsCalculatorSectionItem
-					name={"Gin"}
-					mass={requiredLiters.hardDrink}
-					image={"https://firebasestorage.googleapis.com/v0/b/calcohol-3d5ef.appspot.com/o/gin.jpg?alt=media&token=f6cd0a0f-c247-48d3-bc4a-7db8e3886853"}
-				/>
+				{!!softDrinksEtanolPart &&
+					<ResultsCalculatorSectionItem
+						name={"Beer"}
+						mass={requiredLiters.softDrink}
+						image={"https://firebasestorage.googleapis.com/v0/b/calcohol-3d5ef.appspot.com/o/beer.jpg?alt=media&token=0e0190cf-8776-47f0-be76-ac9a32566cb1"}
+					/>
+				}
+				{!!hardDrinksEtanolPart &&
+					<ResultsCalculatorSectionItem
+						name={"Gin"}
+						mass={requiredLiters.hardDrink}
+						image={"https://firebasestorage.googleapis.com/v0/b/calcohol-3d5ef.appspot.com/o/gin.jpg?alt=media&token=f6cd0a0f-c247-48d3-bc4a-7db8e3886853"}
+					/>
+				}
 			</Box>
 			<Button>More Drinks</Button>
 		</Box>
