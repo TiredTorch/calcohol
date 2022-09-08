@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render input with error 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary css-spqcwk-MuiInputBase-root-MuiInput-root"
+      >
+        <input
+          class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+          type="text"
+          value=""
+        />
+      </div>
+      <p
+        class="MuiFormHelperText-root Mui-error css-1d1r5q-MuiFormHelperText-root"
+      >
+        {!?x2UtT^d
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`should render input without error 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary css-spqcwk-MuiInputBase-root-MuiInput-root"
+      >
+        <input
+          class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+          type="text"
+          value=""
+        />
+      </div>
+      <p
+        class="MuiFormHelperText-root css-1d1r5q-MuiFormHelperText-root"
+      >
+        {!?x2UtT^d
+      </p>
+    </div>
+  </div>
+</body>
+`;

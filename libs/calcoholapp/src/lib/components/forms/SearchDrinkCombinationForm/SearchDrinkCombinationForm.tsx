@@ -11,7 +11,6 @@ export const SearchDrinkCombinationForm: FC<SearchDrinkCombinationFormProps> = (
 	handleSubmitForm
 }) => {
 	const schema = searchDrinkCombinationFormSchema();
-
 	const initialValues: UserPhysProps = {
 		weight: "",
 		proportion: 75,
@@ -33,6 +32,7 @@ export const SearchDrinkCombinationForm: FC<SearchDrinkCombinationFormProps> = (
 		>
 			{({ handleSubmit, setFieldValue, values, handleChange, touched, errors }) => (
 				<Form
+					role="form"
 					onSubmit={handleSubmit}
 					style={{
 						height: "100%"
@@ -65,6 +65,7 @@ export const SearchDrinkCombinationForm: FC<SearchDrinkCombinationFormProps> = (
 						/>
 						<Button
 							type="submit"
+							data-testid="submit"
 						>
 							Search
 						</Button>

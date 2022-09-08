@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render switch 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root css-18m6hx6"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-uw06uf-MuiTypography-root"
+      >
+        j%l.ISxo!+
+      </h2>
+      <span
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root"
+      >
+        <span
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase"
+        >
+          <input
+            class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
+            type="checkbox"
+          />
+          <span
+            class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+          />
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+        <span
+          class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
+        />
+      </span>
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-uw06uf-MuiTypography-root"
+      >
+        _iMl\\"i.l%
+      </h2>
+    </div>
+  </div>
+</body>
+`;

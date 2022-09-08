@@ -5,7 +5,6 @@
     "calcohol": "apps/calcohol",
     "calcohol-e2e": "apps/calcohol-e2e",
     "calcoholapp": "libs/calcoholapp",
-    "redux": "libs/redux",
     "shared": "libs/shared"
   }
 }

@@ -28,7 +28,6 @@ export const Switch: FC<SwitchProps> = ({
 				sx={switchStyles.text}
 			>
 				{rightLable}
-
 			</Typography>
 		</Box>
 	);
