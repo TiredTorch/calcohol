@@ -14,6 +14,7 @@ const NavBarButton: FC<NavBarButtonProps> = ({
 
 	return (
 		<Button
+			data-cy="open_sidebar"
 			onClick={handleClick}
 			sx={{
 				...navBarButtonStyles.root,

@@ -6,7 +6,12 @@ export const HomePageContainer = () => {
 		<Box
 			sx={homePageContainerStyles.root}
 		>
-			<Typography variant="h3">Welcome to Calcohol app</Typography>
+			<Typography
+				variant="h3"
+				data-cy="welcome"
+			>
+				Welcome to Calcohol app
+			</Typography>
 			<Typography variant="h4">To continue, choose 'calculator' in a SideBar</Typography>
 		</Box>
 	);

@@ -17,6 +17,7 @@ export const DrinksPanelDisplay: FC<DrinksPanelDisplayProps> = ({
 	return (
 		<Box
 			onClick={handleCheckDrink}
+			data-cy="drinks_display"
 			sx={[drinksPanelDisplayStyles.root, {
 				background: currentDrink?.image ? `url(${currentDrink?.image})` : "white",
 				backgroundSize: "cover",

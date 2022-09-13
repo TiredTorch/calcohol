@@ -42,7 +42,13 @@ export const SearchDrinkCombinationForm: FC<SearchDrinkCombinationFormProps> = (
 						sx={searchDrinkCombinationFormStyles.root}
 						component="div"
 					>
-						<Typography variant="h3">Insert your data</Typography>
+						<Typography
+							variant="h3"
+							data-cy="welcome"
+						>
+							Insert your data
+
+						</Typography>
 						<Switch
 							value={values.gender}
 							name="gender"

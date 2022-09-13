@@ -26,7 +26,7 @@ export const ResultsCalculatorSection: FC<ResultsCalculatorSectionProps> = ({
 				variant="h2"
 				sx={resultsCalculatorSectionStyles.text}
 			>
-				You have to drink both drinks per one hour!!! For exampe
+				You have to drink both drinks per one hour!!! For example
 			</Typography>
 			<Box
 				component="div"

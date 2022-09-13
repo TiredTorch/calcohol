@@ -33,6 +33,7 @@ const SideBar: FC<SideBarProps> = ({
 							variant="h3"
 							sx={sideBarStyles.text}
 							onClick={onClick}
+							data-cy="redirect_link"
 						>
 							<Box sx={sideBarStyles.circle}></Box>
 							{item.name}

@@ -20,6 +20,7 @@ const DrinksPanel: FC<DrinksPanelProps> = ({
 		>
 			<Box
 				component="div"
+				data-cy="drinks_wrapper"
 				sx={drinksPanelStyles.iconsWrapper}
 			>
 				{drinks.map((item, i) => (

@@ -8,7 +8,8 @@
     "lint": "nx run-many --target=lint --all --maxWarnings=-1 --skip-nx-cache",
     "test:all": "nx run-many --target=test --all --parallel=10 --maxParallel=10 --updateSnapshot --prod --skip-nx-cache --verbose",
     "test:calcoholapp": "nx test calcoholapp --env=jsdom --watchAll --updateSnapshot",
-    "test:shared": "nx test shared --env=jsdom --watchAll --updateSnapshot"
+    "test:shared": "nx test shared --env=jsdom --watchAll --updateSnapshot",
+    "e2e:calcoholapp": "nx e2e calcohol-e2e --watch"
   },
   "private": true,
   "dependencies": {

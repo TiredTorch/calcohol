@@ -16,7 +16,12 @@ export const DrinkPageContainer: FC<DrinkPageContainerProps> = ({
 				component="div"
 				sx={drinkPageContainerStyles.textWrapper}
 			>
-				<Typography variant="h3">{`Name: ${data.name}`}</Typography>
+				<Typography
+					variant="h3"
+					data-cy="welcome"
+				>
+					{`Name: ${data.name}`}
+				</Typography>
 				<Typography variant="h2">{`Vol: ${data.vol} `}</Typography>
 				<Typography variant="h4">{`${data.description}`}</Typography>
 			</Box>

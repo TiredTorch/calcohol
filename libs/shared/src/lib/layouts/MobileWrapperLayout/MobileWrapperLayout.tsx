@@ -24,6 +24,7 @@ export const MobileWrapperLayout: FC<PropsWithChildren<MobileWrapperLayoutProps>
 			<Box
 				component="div"
 				sx={mobileWrapperLayoutStyles.root}
+				data-cy="empty_space"
 			>
 				<Box
 					component="div"
