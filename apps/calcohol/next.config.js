@@ -1,15 +1,8 @@
-//@ts-check
+const withNx = require("@nrwl/next/plugins/with-nx");
+const withPWA = require("next-pwa");
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { withNx } = require('@nrwl/next/plugins/with-nx');
-
-/**
- * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
- **/
 const nextConfig = {
   nx: {
-    // Set this to true if you would like to to use SVGR
-    // See: https://github.com/gregberge/svgr
     svgr: false,
   },
   images: {
@@ -23,7 +16,15 @@ const nextConfig = {
     NX_MESSAGING_SENDER_ID: process.env.NX_MESSAGING_SENDER_ID,
     NX_APP_ID: process.env.NX_APP_ID,
     NX_MEASUREMENT_ID: process.env.NX_MEASUREMENT_ID,
+  },
+  pwa: {
+    // disable: process.env.NODE_ENV === "development",
+    register: true,
+    skipWaiting: true,
+    dest: "../../dist/apps/calcohol/public",
+    swSrc: "service-worker.js",
+    sw: "sw.js",
   }
 };
 
-module.exports = withNx(nextConfig);
+module.exports = withNx(withPWA(nextConfig));
