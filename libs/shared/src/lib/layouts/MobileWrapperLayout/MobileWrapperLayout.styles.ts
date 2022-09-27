@@ -1,6 +1,8 @@
-import { getImageSrc } from "../../helpers";
 import bg from "../../assets/bg.png";
 import wrapperBg from "../../assets/wrapperBg.jpg";
+
+const bgConv = bg as unknown as { src: string };
+const wrapperBgConv = wrapperBg as unknown as { src: string };
 
 export const mobileWrapperLayoutStyles = {
 	root: {
@@ -11,7 +13,7 @@ export const mobileWrapperLayoutStyles = {
 		height: "100vh",
 		maxWidth: "100vw",
 		maxHeight: "100vh",
-		background: `url("${getImageSrc(bg)}")`,
+		background: `url("${bgConv.src}")`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
@@ -21,7 +23,7 @@ export const mobileWrapperLayoutStyles = {
 		width: "100%",
 		height: "100vh",
 		maxWidth: "820px",
-		background: `url("${getImageSrc(wrapperBg)}")`,
+		background: `url("${wrapperBgConv.src}")`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		margin: "auto"
