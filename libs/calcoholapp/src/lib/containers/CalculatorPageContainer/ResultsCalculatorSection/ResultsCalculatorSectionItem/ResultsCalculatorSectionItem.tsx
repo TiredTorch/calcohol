@@ -15,16 +15,10 @@ const ResultsCalculatorSectionItem: FC<ResultsCalculatorSectionItemProps> = ({
 			sx={resultsCalculatorSectionItemStyles.root}
 		>
 			<Box
-				component="div"
+				component="img"
+				src={image}
 				sx={resultsCalculatorSectionItemStyles.image}
 			>
-				<Image
-					src={image}
-					layout="fill"
-					objectFit="cover"
-					objectPosition="100% 50%"
-					placeholder="empty"
-				/>
 			</Box>
 			<Typography variant="h3">{name}</Typography>
 			<Typography variant="h3">{`${mass} liters.`}</Typography>

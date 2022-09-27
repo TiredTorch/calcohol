@@ -1,10 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 import { sideBarStyles } from "./SideBar.styles";
 import { SideBarProps } from "./SideBar.types";
-import electorChemistry from "../../../assets/electroChemistry.png";
 
 const SideBar: FC<SideBarProps> = ({
 	isOpen,
@@ -45,11 +43,6 @@ const SideBar: FC<SideBarProps> = ({
 				component="div"
 				sx={sideBarStyles.bottomPart}
 			>
-				<Image
-					src={electorChemistry}
-					layout="fixed"
-					width={"200%"}
-				/>
 				<Typography
 					variant="h4"
 					sx={sideBarStyles.bottomText}

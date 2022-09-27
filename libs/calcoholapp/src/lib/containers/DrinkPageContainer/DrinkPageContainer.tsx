@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 import { DrinkPageContainerProps } from "./DrinkPageContainer.types";
 import { drinkPageContainerStyles } from "./DrinkPageContainer.styles";
@@ -26,16 +25,10 @@ export const DrinkPageContainer: FC<DrinkPageContainerProps> = ({
 				<Typography variant="h4">{`${data.description}`}</Typography>
 			</Box>
 			<Box
-				component="div"
+				component="img"
+				src={data.image}
 				sx={drinkPageContainerStyles.imageWrapper}
 			>
-				<Image
-					src={data.image}
-					layout="fill"
-					objectFit="cover"
-					objectPosition="100% 50%"
-					placeholder="empty"
-				/>
 			</Box>
 
 		</Box>

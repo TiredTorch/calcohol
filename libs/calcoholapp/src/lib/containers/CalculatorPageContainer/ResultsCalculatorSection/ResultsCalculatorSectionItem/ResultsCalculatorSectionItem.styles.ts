@@ -11,6 +11,6 @@ export const resultsCalculatorSectionItemStyles = {
 		position: "relative",
 		width: "100%",
 		height: "40vh",
-		border: ".2vmax solid purple"
+		border: ".2vmax solid purple",
 	}
 };
